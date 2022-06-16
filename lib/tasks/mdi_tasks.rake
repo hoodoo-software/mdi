@@ -11,17 +11,17 @@ namespace :mdi do
       #
     HEREDOC
 
-    Dir['config/svg/*.svg'].each do |svg_icon_path|
-      icon_data_file_name = File.basename(svg_icon_path, '.svg').underscore
-      icon_data_file_path = "app/models/mdi/#{icon_data_file_name}.rb"
-      puts "Generating #{icon_data_file_path}"
-      File.open(icon_data_file_path, 'w+') do |f|
-        svg = Nokogiri::HTML.parse(File.read(svg_icon_path))
+    Dir['data/svg/*.svg'].each do |svg_file_path|
+      mdi_data_file_name = File.basename(svg_file_path, '.svg').underscore
+      mdi_data_file_path = "app/models/mdi/#{mdi_data_file_name}.rb"
+      puts "Generating #{mdi_data_file_path}"
+      File.open(mdi_data_file_path, 'w+') do |f|
+        svg = Nokogiri::HTML.parse(File.read(svg_file_path))
         svg_content = svg.at_css('svg').children
 
         f.puts auto_generated_comment
         f.puts 'module Mdi'
-        f.puts "  class #{icon_data_file_name.camelize} < MdiData"
+        f.puts "  class #{mdi_data_file_name.camelize} < MdiData"
         f.puts '    def content'
         f.puts '      <<-HTML.squish.html_safe'
         f.puts "        #{svg_content}"

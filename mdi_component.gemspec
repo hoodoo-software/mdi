@@ -11,9 +11,9 @@ Gem::Specification.new do |spec|
   spec.version = Mdi::VERSION
   spec.authors = ['Andriy Protsyk']
   spec.email = ['aprotsyk@gmail.com']
-  spec.homepage = 'https://hoodoo.software'
-  spec.summary = 'Lightweight set of Material Design icons for Rails'
-  spec.description = 'A collection of Material Design icons for use in Rails'
+  spec.homepage = 'https://github.com/hoodoo-software/mdi_component'
+  spec.summary = 'Material Design Icon Component for Ruby on Rails'
+  spec.description = 'A collection of Material Design Icon components for Ruby on Rails.'
   spec.license = 'MIT'
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
@@ -25,10 +25,10 @@ Gem::Specification.new do |spec|
       'public gem pushes.'
   end
 
-  spec.files = Dir['{app,config,lib}/**/*', 'MIT-LICENSE', 'Rakefile', 'README.md']
+  spec.files = Dir['{app,lib}/**/*', 'MIT-LICENSE', 'Rakefile', 'README.md']
 
   spec.required_ruby_version = '>= 2.6.0'
 
-  spec.add_dependency 'rails', '>= 6.0'
-  spec.add_dependency 'view_component', '>= 2.0'
+  spec.add_runtime_dependency 'rails', '>= 6.0'
+  spec.add_runtime_dependency 'view_component', '>= 2.0'
 end
