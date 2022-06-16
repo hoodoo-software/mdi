@@ -21,8 +21,8 @@ namespace :mdi do
 
         f.puts auto_generated_comment
         f.puts 'module Mdi'
-        f.puts "  class #{icon_data_file_name.camelize}"
-        f.puts '    def self.content'
+        f.puts "  class #{icon_data_file_name.camelize} < MdiData"
+        f.puts '    def content'
         f.puts '      <<-HTML.squish.html_safe'
         f.puts "        #{svg_content}"
         f.puts '      HTML'

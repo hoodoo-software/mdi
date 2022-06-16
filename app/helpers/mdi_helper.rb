@@ -1,5 +1,5 @@
 module MdiHelper
-  def mdi_component(icon_data, **attributes, &block)
-    render MdiComponent.new(icon_data, **attributes), &block
+  def mdi_component(mdi_data, **svg_attributes, &block)
+    render MdiComponent.new(mdi_data, **svg_attributes), &block
   end
 end

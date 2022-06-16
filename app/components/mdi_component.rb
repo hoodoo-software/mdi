@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
 class MdiComponent < ViewComponent::Base
-  def initialize(svg_content = nil, **svg_attributes)
-    @svg_content = svg_content
+  def initialize(mdi_data = nil, **svg_attributes)
+    @mdi_data = mdi_data.is_a?(Class) ? mdi_data.new : mdi_data
     @svg_attributes = svg_attributes
   end
 
@@ -26,7 +26,7 @@ class MdiComponent < ViewComponent::Base
   private
 
   def svg_content
-    content.presence || @svg_content&.content
+    content.presence || @mdi_data.try(:content)
   end
 end
 
