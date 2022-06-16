@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 namespace :mdi do
   desc 'Create auto-generated icon data files models/mdi/*.rb'
   task :generate do
@@ -9,25 +11,25 @@ namespace :mdi do
       #
     HEREDOC
 
-    Dir['config/svg/**/*.svg'].each do |svg_icon_path|
+    Dir['config/svg/*.svg'].each do |svg_icon_path|
       icon_data_file_name = File.basename(svg_icon_path, '.svg').underscore
       icon_data_file_path = "app/models/mdi/#{icon_data_file_name}.rb"
       puts "Generating #{icon_data_file_path}"
-      File.open(icon_data_file_path, 'w+') do |index|
+      File.open(icon_data_file_path, 'w+') do |f|
         svg = Nokogiri::HTML.parse(File.read(svg_icon_path))
         svg_content = svg.at_css('svg').children
 
-        File.read(svg_icon_path)
-        index.puts auto_generated_comment
-        index.puts 'module Mdi'
-        index.puts "  class #{icon_data_file_name.camelize}"
-        index.puts '    def self.content'
-        index.puts '      <<-HTML.squish.html_safe'
-        index.puts "        #{svg_content}"
-        index.puts '      HTML'
-        index.puts '    end'
-        index.puts '  end'
-        index.puts 'end'
+        f.puts auto_generated_comment
+        f.puts 'module Mdi'
+        f.puts "  class #{icon_data_file_name.camelize}"
+        f.puts '    def self.content'
+        f.puts '      <<-HTML.squish.html_safe'
+        f.puts "        #{svg_content}"
+        f.puts '      HTML'
+        f.puts '    end'
+        f.puts '  end'
+        f.puts 'end'
+        f
       end
     end
   end

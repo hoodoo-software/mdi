@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 $:.push File.expand_path('lib', __dir__)
 
 # Maintain your gem's version:
@@ -10,8 +12,8 @@ Gem::Specification.new do |spec|
   spec.authors = ['Andriy Protsyk']
   spec.email = ['aprotsyk@gmail.com']
   spec.homepage = 'https://hoodoo.software'
-  spec.summary = 'Lightweight set of MDI icons for Rails'
-  spec.description = 'A collection of material design icons for use in Rails'
+  spec.summary = 'Lightweight set of Material Design icons for Rails'
+  spec.description = 'A collection of Material Design icons for use in Rails'
   spec.license = 'MIT'
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'

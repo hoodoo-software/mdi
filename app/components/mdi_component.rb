@@ -1,11 +1,9 @@
 # frozen_string_literal: true
 
 class MdiComponent < ViewComponent::Base
-  attr_reader :data, :html_attributes
-
-  def initialize(data:, **html_attributes)
-    @data = data
-    @html_attributes = html_attributes
+  def initialize(svg_content = nil, **svg_attributes)
+    @svg_content = svg_content
+    @svg_attributes = svg_attributes
   end
 
   def call
@@ -16,13 +14,19 @@ class MdiComponent < ViewComponent::Base
             'aria-hidden': 'true',
             focusable: 'false',
             fill: 'currentColor',
-            **html_attributes do
-      data&.content
+            **@svg_attributes do
+      svg_content
     end
   end
 
   def render?
-    data&.content.present?
+    svg_content.present?
+  end
+
+  private
+
+  def svg_content
+    content.presence || @svg_content&.content
   end
 end
 

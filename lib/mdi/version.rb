@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Mdi
-  VERSION = '6.5.95'
+  VERSION = '0.1.0'
 end
