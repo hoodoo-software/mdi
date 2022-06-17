@@ -2,8 +2,8 @@ PATH
   remote: .
   specs:
     mdi_component (0.1.0)
-      rails (>= 6.0)
-      view_component (>= 2.0)
+      rails (>= 6.0, < 8.0)
+      view_component (~> 2.0)
 
 GEM
   remote: https://rubygems.org/

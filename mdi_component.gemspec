@@ -12,8 +12,8 @@ Gem::Specification.new do |spec|
   spec.authors = ['Andriy Protsyk']
   spec.email = ['aprotsyk@gmail.com']
   spec.homepage = 'https://github.com/hoodoo-software/mdi_component'
-  spec.summary = 'Material Design Icon Component for Ruby on Rails'
-  spec.description = 'A collection of Material Design Icon components for Ruby on Rails.'
+  spec.summary = 'Material Design Icons view component for Ruby on Rails'
+  spec.description = 'A lightweight Ruby on Rails ViewComponent that renders svg icons  from the Material Design Icons collection over 6700 icons.'
   spec.license = 'MIT'
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
@@ -29,6 +29,6 @@ Gem::Specification.new do |spec|
 
   spec.required_ruby_version = '>= 2.6.0'
 
-  spec.add_runtime_dependency 'rails', '>= 6.0'
-  spec.add_runtime_dependency 'view_component', '>= 2.0'
+  spec.add_runtime_dependency 'rails', '>= 6.0', '< 8.0'
+  spec.add_runtime_dependency 'view_component', '~> 2.0'
 end
