@@ -19,9 +19,5 @@ jobs:
       with:
         ruby-version: 2.7
         bundler-cache: true
-    - name: Install dependencies
-      run: |
-        gem install bundler
-        bundle install
     - name: Run Tests
       run: bundle exec rake
