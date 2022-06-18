@@ -13,7 +13,7 @@ Gem::Specification.new do |spec|
   spec.email = ['aprotsyk@gmail.com']
   spec.homepage = 'https://github.com/hoodoo-software/mdi_component'
   spec.summary = 'Material Design Icons view component for Ruby on Rails'
-  spec.description = 'A lightweight Ruby on Rails ViewComponent that renders svg icons  from the Material Design Icons collection over 6700 icons.'
+  spec.description = 'A lightweight Ruby on Rails view component that renders svg icons from the Material Design Icons collection with over 6,700 icons'
   spec.license = 'MIT'
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'

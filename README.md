@@ -1,5 +1,5 @@
 # MdiComponent
-A lightweight Ruby on Rails ViewComponent that renders svg icons  from the [Material Design Icons][materialdesignicons_link] collection over 6700 icons.
+A lightweight Ruby on Rails view component that renders svg icons from the [Material Design Icons][materialdesignicons_link] collection with over 6,700 icons.
 
 ## Usage
 
@@ -9,7 +9,7 @@ render MdiComponent.new(Mdi::LanguageRuby, width: 72, height: 72, color: "#d02d3
 ```
 
 View helper:
-```erb
+```erbruby
 <%= mdi_component(Mdi::LanguageRubyOnRails, width: 72, height: 72, color: "#d02d32") %>
 ```
 
