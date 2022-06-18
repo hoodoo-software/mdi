@@ -1,24 +1,18 @@
-# MdiComponent
-A lightweight Ruby on Rails view component that renders svg icons from the [Material Design Icons][materialdesignicons_link] collection with over 6,700 icons.
+# mdi
+A view helper for Ruby on Rails that renders SVG icons from the [Material Design Icons][materialdesignicons_link] collection with over 6,700 icons
 
 ## Usage
 
-View component:
-```ruby
-render MdiComponent.new(Mdi::LanguageRuby, width: 72, height: 72, color: "#d02d32")
-```
-
 View helper:
-```erbruby
-<%= mdi_component(Mdi::LanguageRubyOnRails, width: 72, height: 72, color: "#d02d32") %>
+```erb
+<%= mdi_icon(Mdi::LanguageRubyOnRails, width: 72, height: 72, color: "#d02d32") %>
 ```
-
 
 ## Installation
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'mdi_component'
+gem 'mdi'
 ```
 
 And then execute:
@@ -28,14 +22,10 @@ $ bundle
 
 Or install it yourself as:
 ```bash
-$ gem install mdi_component
+$ gem install mdi
 ```
-
-## Contributing
-Contribution directions go here.
 
 ## License
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
 
-[hoodoo_software_link]: https://hoodoo.software
 [materialdesignicons_link]: https://materialdesignicons.com
