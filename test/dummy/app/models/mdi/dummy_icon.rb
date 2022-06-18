@@ -1,7 +1,11 @@
-class Mdi::DummyIcon < MdiData
-  def content
-    <<-HTML.squish.html_safe
+# frozen_string_literal: true
+
+module Mdi
+  class DummyIcon < MdiData
+    def content
+      <<-HTML.squish.html_safe
       <path d="M20,7Z"></path>
-    HTML
+      HTML
+    end
   end
 end

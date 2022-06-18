@@ -1,0 +1,8 @@
+AllCops:
+  Exclude:
+    - bin/**
+    - test/dummy/bin/**
+    - config.ru
+
+Style/Documentation:
+  Enabled: false

@@ -9,7 +9,8 @@ Gem::Specification.new do |spec|
   spec.email = ['aprotsyk@gmail.com']
   spec.homepage = 'https://github.com/hoodoo-software/mdi'
   spec.summary = 'Material Design Icons view helper for Ruby on Rails'
-  spec.description = 'A view helper for Ruby on Rails that renders SVG icons from the Material Design Icons collection with over 6,700 icons'
+  spec.description = 'A view helper for Ruby on Rails that renders SVG icons from the Material Design Icons'\
+                     ' collection with over 6,700 icons'
   spec.license = 'MIT'
 
   spec.files = Dir['{app,lib}/**/*', 'MIT-LICENSE', 'Rakefile', 'README.md']
@@ -19,5 +20,7 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency 'rails', '>= 5.0', '< 8.0'
 
   spec.add_development_dependency 'minitest', '~> 5.0'
-  spec.add_development_dependency 'standard', '~> 1.12'
+  spec.add_development_dependency 'rubocop', '~> 1.30'
+  spec.add_development_dependency 'rubocop-minitest', '~> 0.20'
+  spec.add_development_dependency 'rubocop-rails', '~> 2.15'
 end
