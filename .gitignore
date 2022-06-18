@@ -2,3 +2,5 @@
 log/*.log
 pkg/
 .idea/
+
+test/dummy/log/*.log
