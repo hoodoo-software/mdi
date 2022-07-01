@@ -1,3 +1,5 @@
+require: rubocop-rails
+
 AllCops:
   Exclude:
     - bin/**
@@ -5,4 +7,7 @@ AllCops:
     - config.ru
 
 Style/Documentation:
+  Enabled: false
+
+Rails/OutputSafety:
   Enabled: false

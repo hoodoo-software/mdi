@@ -2,7 +2,7 @@
 
 namespace :mdi do
   desc 'Create auto-generated icon data files models/mdi/*.rb'
-  task :generate do
+  task generate: :environment do
     auto_generated_comment = <<~HEREDOC
       # frozen_string_literal: true
 
