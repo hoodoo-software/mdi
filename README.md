@@ -1,5 +1,5 @@
 # mdi
-A view helper for Ruby on Rails that renders inline SVG icons from the [Material Design Icons][materialdesignicons_link] collection with over 6,900 icons
+A view helper for Ruby on Rails that renders inline SVG icons from the [Material Design Icons][materialdesignicons_link] collection with over 7,000 icons
 
 ## Usage
 
@@ -12,6 +12,11 @@ mdi_icon helper that will render inline svg tag into your code:
 # </svg>
 ```
 Collection of all available icons can be found in the [Mdi][mdi_models_link] namespace.
+
+## Material Design Icons
+
+* View at [all available icons][materialdesignicons_link]
+* [Changelog Guide] [materialdesignicons_changelog_link]
 
 ## Installation
 Add this line to your application's Gemfile:
@@ -35,3 +40,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 [materialdesignicons_link]: https://materialdesignicons.com
 [mdi_models_link]: app/models/mdi/
+[materialdesignicons_changelog_link]: https://dev.materialdesignicons.com/changelog

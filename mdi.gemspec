@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.homepage = 'https://github.com/hoodoo-software/mdi'
   spec.summary = 'Material Design Icons view helper for Ruby on Rails'
   spec.description = 'A view helper for Ruby on Rails that renders inline SVG icons from the Material Design Icons'\
-                     ' collection with over 6,900 icons'
+                     ' collection with over 7,000 icons'
   spec.license = 'MIT'
 
   spec.files = Dir['{app,lib}/**/*', 'MIT-LICENSE', 'Rakefile', 'README.md']
