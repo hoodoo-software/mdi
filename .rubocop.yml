@@ -11,3 +11,6 @@ Style/Documentation:
 
 Rails/OutputSafety:
   Enabled: false
+
+Metrics/BlockLength:
+  Max: 80
