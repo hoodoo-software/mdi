@@ -16,7 +16,7 @@ Collection of all available icons can be found in the [Mdi][mdi_models_link] nam
 ## Material Design Icons
 
 * View at [all available icons][materialdesignicons_link]
-* [Changelog Guide] [materialdesignicons_changelog_link]
+* [Changelog Guide][materialdesignicons_changelog_link]
 
 ## Installation
 Add this line to your application's Gemfile:
