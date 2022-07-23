@@ -14,6 +14,8 @@ namespace :mdi do
     meta = JSON.parse(File.read('data/meta.json'))
                .index_by { |item| item['name'] }
 
+    FileUtils.rm_f Dir.glob('app/models/mdi/*.rb')
+
     Dir['data/svg/*.svg'].each do |svg_file_path|
       svg_file_basename = File.basename(svg_file_path, '.svg')
       svg_file_meta = meta[svg_file_basename]

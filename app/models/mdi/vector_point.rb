@@ -5,11 +5,11 @@
 #
 module Mdi
   # * Version: 1.5.54
-  # * Author: Austin Andrews
+  # * Author: Andrea Antonello
   class VectorPoint < MdiData
     def content
       <<-HTML.squish.html_safe
-        <path d="M12,20L7,22L12,11L17,22L12,20M8,2H16V5H22V7H16V10H8V7H2V5H8V2M10,4V8H14V4H10Z"></path>
+        <path d="M9 9V15H15V9H9M11 11H13V13H11V11Z"></path>
       HTML
     end
   end
