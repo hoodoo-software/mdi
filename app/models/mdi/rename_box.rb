@@ -5,7 +5,7 @@
 #
 module Mdi
   # * Version: 1.5.54
-  # * Author: Google
+  # * Author: frankgrinaert
   class RenameBox < MdiData
     def content
       <<-HTML.squish.html_safe

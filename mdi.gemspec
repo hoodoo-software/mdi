@@ -15,7 +15,7 @@ Gem::Specification.new do |spec|
 
   spec.files = Dir['{app,lib}/**/*', 'MIT-LICENSE', 'Rakefile', 'README.md']
 
-  spec.required_ruby_version = '>= 2.6'
+  spec.required_ruby_version = '>= 2.7'
 
   spec.add_runtime_dependency 'rails', '>= 5.0', '< 8.0'
 
