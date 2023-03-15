@@ -4,3 +4,5 @@ pkg/
 .idea/
 
 test/dummy/log/*.log
+
+.yardoc
