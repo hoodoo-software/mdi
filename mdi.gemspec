@@ -14,6 +14,7 @@ Gem::Specification.new do |spec|
   spec.license = 'MIT'
   spec.metadata = {
     'bug_tracker_uri' => 'https://github.com/hoodoo-software/mdi/issues',
+    'documentation_uri' => 'https://rubydoc.info/github/hoodoo-software/mdi',
     'homepage_uri' => 'https://github.com/hoodoo-software/mdi',
     'source_code_uri' => 'https://github.com/hoodoo-software/mdi',
   }
