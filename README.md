@@ -46,6 +46,6 @@ $ gem install mdi
 ## License
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
 
-[materialdesignicons_link]: https://materialdesignicons.com
+[materialdesignicons_link]: https://pictogrammers.com/library/mdi/
 [mdi_models_link]: https://rubydoc.info/github/hoodoo-software/mdi/Mdi
-[materialdesignicons_changelog_link]: https://dev.materialdesignicons.com/changelog
+[materialdesignicons_changelog_link]: https://pictogrammers.com/docs/library/mdi/releases/changelog

@@ -2,6 +2,6 @@
 
 class MdiData
   def content
-    raise NotImplementedError, 'MdiData#content must be overridden'
+    raise NotImplementedError, "MdiData#content must be overridden"
   end
 end
